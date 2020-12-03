@@ -19,9 +19,17 @@ header::after{
     display: table;
     clear: both;
 }
-.logo{
+
+.resize {
     float: left;
     padding:10px 0;
+    width: 400px;
+    height: auto;
+}
+
+.resize {
+    width: 300px;
+    height: auto;
 }
 
 nav{
@@ -38,6 +46,8 @@ nav li{
     display: inline-block;
     margin-left:  70px;
     padding-top: 23px;
+
+    position: relative;
 }
 
 nav a{
@@ -52,4 +62,21 @@ nav a:hover{
     columns: #000000;
 }
 
+nav a::before{
+    content:'';
+    display: block;
+    height: 10px;
+    background-color: #444;
 
+    position: absolute;
+    top:0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::before{
+    width:100%;
+
+}
