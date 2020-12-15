@@ -81,6 +81,46 @@ nav a:hover::before{
 
 }
 
-h1{
+h4{
     color:purple;
+}
+h5{
+    color: blue;
+}
+h2{
+    color:purple;
+
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+}
+
+.sky{
+    background-color: blue;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.ground{
+    background-color: brown;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+}
+.bird{
+    background-color: yellow;
+    position: absolute;
+    height: 45px;
+    width: 60px;
+}
+.obstacle{
+    background-color: green;
+    position: absolute;
+    height: 300px;
+    width: 30px;
 }
