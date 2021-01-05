@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900\Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="last.css">
 </head>
 
 
@@ -25,9 +26,7 @@
 
     <header>
 
-        <!-- <div class="logo">
-            <img src="logo.JPG" alt="">
-        </div> -->
+  
 
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -43,62 +42,65 @@
 
     <section class="intro" id = "home">
         <h1 class="section__title section__title--intro">
-            HI, I am <strong>Robbie</strong>
+           
         </h1>
-        <p class="section__subtitle seciton__subtitle--intro">PHHS Student</p>
+        <p class="section__subtitle seciton__subtitle--intro"></p>
         
-        <img src="logo.JPG" alt="picture of dog" class="intro__img">
-        
+        <img src="logo.JPG" alt="picture of dog" class="first">
+        <img src="dog1.JPG" alt="picture of dog" class="second">
+        <img src="dog2.JPG" alt="picture of dog" class="third">
+        <img src="dog3.JPG" alt="picture of dog" class="fourth">
+
     </section>
 
     <section class="my-services" id="services">
-        <h2 class = "section__title section__title--services">What I do</h2>
+        <h2 class = "section__title section__title--services">Extra Information</h2>
         <div class= "services">
             
             <div class="service">
-                <h3>Extra curriculars</h3>
-                <p>Some of the after school activites that I have taken part in are fantasy hockey leauge and prodject paterson. I have also played lacrose every year at pascack hills. If we are counting last year as a season :(</p>
+                <h3>links</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus molestias explicabo recusandae! Eos, necessitatibus ex doloribus accusamus eius possimus non maiores deserunt consequatur ipsum modi eligendi quia reprehenderit consequuntur?</p>
             </div>
 
             <div class="service">
-                <h3>Working stuff</h3>
+                <h3>side projects</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus molestias explicabo recusandae! Eos, necessitatibus ex doloribus accusamus eius possimus non maiores deserunt consequatur ipsum modi eligendi quia reprehenderit consequuntur?</p>
             </div>
 
             <div class="service">
                 <h3>projects</h3>
-                <p>Some coding prodjects that i really enjoyed were arduino and frogger. Frogger was the one of my first full games that I devloped. Looking back on it, it wasnt the best game and graphics but it was a start. Arduino was fun to learn because it was something completely differnt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus molestias explicabo recusandae! Eos, necessitatibus ex doloribus accusamus eius possimus non maiores deserunt consequatur ipsum modi eligendi quia reprehenderit consequuntur?</p>
             </div>
         </div>
-        <a href="#about"class="btn">who am I </a>
-    </section>
+        <a href="#about"class="btn" onclick="myFunction()">Random color </a>
 
-    <section class="about-me" id="about">
-        <h2 class="sections__title section__title--about">who am I</h2>
-        <p class="section__subtitle section__subtitle--about">all things I do</p>
+        
+    <script>
+    function myFunction()
+    {   
+    document.body.style.backgroundColor= getRandomColor();
+    }
 
-        <div class = "about-me__body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus rem corporis, voluptate quos recusandae! Blanditiis laborum nesciunt mollitia incidunt voluptate cupiditate enim, ullam tempore dolorum, nihil facere. Maxime, saepe?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum suscipit in porro repellat, at tempora quod ratione quisquam qui, numquam minima necessitatibus alias excepturi. Iste tenetur commodi necessitatibus! Cupiditate, accusantium!</p>
-        </div>
-        <a href="https://www.google.com/search?q=google+snake+game&oq=google+snake+game&aqs=chrome..69i57j0l2j0i395j69i65j69i60l3.7147j1j7&sourceid=chrome&ie=UTF-8" class="about-me__image">
-        <img src="cat.jpg" alt="cat" class="about-me__image">
-        </a>
+    </script>
+
+    <script>
+        function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+    }
+    </script>
+
+
     </section>
 
    
+   
 
-    <footer class ="footer">
-        <a href="mailto:Respinosa21@pascack.org" class="footer link">espo2003@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="https://www.youtube.com/">Youtube</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.google.com/">Google</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://pascack.instructure.com/">Canvas</a></li>
-
-        </ul>
-
-    </footer>
-
+    
     <script src=index.js></script>
 
 </body>
