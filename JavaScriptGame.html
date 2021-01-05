@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head> 
-<link rel="stylesheet" href="styles.css">
-<link href="styles.css" rel="styles.c" type="styles.css">
-<meta charset="UTF-8">
-<title>Flappy Bird</title>
-<script src="app.js" charset="UTF-8"></script>
+<html onclick="jump()">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-<script src="main.js" defer type="module"></script>
 
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="styles.css" rel="styles.c" type="styles.css">
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900\Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="flappy.css">
 </head>
 
 
@@ -16,30 +27,40 @@
 <body>
 
     <header>
-        <div class="container">
-            
-            <img class="resize" src="logo.png"/>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="JavaScriptGame.html">game</a></li>
-                    <li><a href="LastPage.html">More Info</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Dont Know? :(</a></li>
-                </ul>
-            </nav>
+
+        <!-- <div class="logo">
+            <img src="logo.JPG" alt="">
+        </div> -->
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li  class="nav_item"><a href="JavaScriptGame.html">game</a></li>
+                <li class="nav_item"><a href="LastPage.html">More Info</a></li>
+            </ul>
+        </nav>
+        <div id="game">
+            <div id="block"></div>
+            <div id="hole"></div>
+            <div id="character"></div>
         </div>
+
     </header>
 
-   <div class="game-container">
+
+
+   
+
     
-    <div class="sky">
-      <div class="bird"></div>
-    </div>
 
-     <div class="ground"></div>
-   </div>
+    <script src=index.js></script>
+    <script src=app.js></script>
 
+    
+    
 
 </body>
 </html>

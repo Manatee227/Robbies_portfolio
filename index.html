@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<link rel="stylesheet" href="styles.css">
-<link href="styles.css" rel="styles.c" type="styles.css">
-<meta charset="UTF-8">
-<title>Navbar</title>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="styles.css" rel="styles.c" type="styles.css">
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900\Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
 
     <header>
-        <div class="container">
-            
-            <img class="resize" src="logo.png"/>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="JavaScriptGame.html">game</a></li>
-                    <li><a href="LastPage.html">More Info</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Dont Know? :(</a></li>
-                </ul>
-            </nav>
-        </div>
+
+        <!-- <div class="logo">
+            <img src="logo.JPG" alt="">
+        </div> -->
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li  class="nav_item"><a href="JavaScriptGame.html">game</a></li>
+                <li class="nav_item"><a href="LastPage.html">More Info</a></li>
+            </ul>
+        </nav>
     </header>
 
-<h5>Hello, My name is Robbie Espinosa and this is my absolutely amazing website.</h5>
-<h5>below this you can see amaizing images, and you can use the navigation bar on the top to go from page to page</h5>
-<h5>you can reach me at espo2003@gmail.com</h5>
-    
-<h2>Information:</h2>
-<h4> Autem esse odit rem, possimus, quos quis eligendi alias, quas quod nulla culpa! Quod, inventore consequuntur. Fugiat veritatis maxime architecto sapiente. Molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci tempora vel consequatur culpa facere modi fuga temporibus quos nisi aspernatur totam accusamus, corrupti praesentium laborum nihil eius, debitis aliquid accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, impedit eveniet quibusdam itaque inventore hic ut vero pariatur? Quasi illum voluptatum veniam maiores aspernatur. Minus enim a impedit exercitationem quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime consequuntur perferendis reprehenderit officiis quos vitae quisquam optio eveniet ad sapiente quis, praesentium error, id aliquid modi magnam cum accusantium voluptatibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus magni nihil dolorem sint enim. Iusto atque ut consequuntur iste ea! Quod distinctio ab quas eaque facere exercitationem ea aliquam? Nam?</h4>
+    <section class="intro" id = "home">
+        <h1 class="section__title section__title--intro">
+            HI, I am <strong>Robbie</strong>
+        </h1>
+        <p class="section__subtitle seciton__subtitle--intro">PHHS Student</p>
+        
+        <img src="logo.JPG" alt="picture of dog" class="intro__img">
+        
+    </section>
 
-<img src="snow.jpeg" alt="snow boarding">
-<img src="cat.jpg" alt="cat">
+    <section class="my-services" id="services">
+        <h2 class = "section__title section__title--services">What I do</h2>
+        <div class= "services">
+            
+            <div class="service">
+                <h3>Extra curriculars</h3>
+                <p>Some of the after school activites that I have taken part in are fantasy hockey leauge and prodject paterson. I have also played lacrose every year at pascack hills . If we are counting last year as a season(Covid)    :(</p>
+            </div>
 
-<div></div>
-<a href="https://www.google.com/">GOOGLE</a>
-<div></div>
+            <div class="service">
+                <h3>Working stuff</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus molestias explicabo recusandae! Eos, necessitatibus ex doloribus accusamus eius possimus non maiores deserunt consequatur ipsum modi eligendi quia reprehenderit consequuntur?</p>
+            </div>
 
-<a href="https://www.youtube.com/">youtube</a>
-<div></div>
-<button type="button">Click Me!</button>
+            <div class="service">
+                <h3>projects</h3>
+                <p>Some coding prodjects that i really enjoyed were arduino and frogger. Frogger was the one of my first full games that I devloped. Looking back on it, it wasnt the best game and graphics but it was a start. Arduino was fun to learn because it was something completely differnt.</p>
+            </div>
+        </div>
+        <a href="#about"class="btn">who am I </a>
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="sections__title section__title--about">who am I</h2>
+        <p class="section__subtitle section__subtitle--about">all things I do</p>
+
+        <div class = "about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus rem corporis, voluptate quos recusandae! Blanditiis laborum nesciunt mollitia incidunt voluptate cupiditate enim, ullam tempore dolorum, nihil facere. Maxime, saepe?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum suscipit in porro repellat, at tempora quod ratione quisquam qui, numquam minima necessitatibus alias excepturi. Iste tenetur commodi necessitatibus! Cupiditate, accusantium!</p>
+        </div>
+        <a href="https://www.google.com/search?q=google+snake+game&oq=google+snake+game&aqs=chrome..69i57j0l2j0i395j69i65j69i60l3.7147j1j7&sourceid=chrome&ie=UTF-8" class="about-me__image">
+        <img src="cat.jpg" alt="cat" class="about-me__image">
+        </a>
+    </section>
+
+   
+
+    <footer class ="footer">
+        <a href="mailto:Respinosa21@pascack.org" class="footer link">espo2003@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://www.youtube.com/">Youtube</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.google.com/">Google</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://pascack.instructure.com/">Canvas</a></li>
+
+        </ul>
+
+    </footer>
+
+    <script src=index.js></script>
+
 </body>
 </html>
